@@ -17,4 +17,8 @@
         INSERT INTO user_info(NAME, AGE) VALUES(#{name}, #{age})
     </insert>
 
+    <select id="safefindById" resultType="com.ffffffff0x.exploit.p.entity.UserPrimary">
+        select * from user_info where id = #{id}
+    </select>
+
 </mapper>

@@ -13,6 +13,10 @@
         select * from USER where id = ${id}
     </select>
 
+    <select id="safefindById" resultType="com.ffffffff0x.exploit.p.entity.UserPrimary">
+        select * from USER where id = #{id}
+    </select>
+
     <insert id="insert">
         INSERT INTO USER(NAME, AGE) VALUES(#{name}, #{age})
     </insert>
